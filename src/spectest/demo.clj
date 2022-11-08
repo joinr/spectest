@@ -34,6 +34,12 @@
 ;;spectest.demo> (s/valid? ::Bet (->Bet [(->Amount 10 "quatloos")] 494 "A demo!"))
 ;;true
 
+;;Plain maps are also valid..
+;;spectest.demo> (s/valid? ::Bet {:amounts [{:amount 10 :currency "quatloos"}]
+;;                                :game-code 494
+;;                                :description "A demo!"})
+;;true
+
 ;;generate some sample data to get an idea of the specs or have stuff
 ;;for testing:
 (defn sample-data [n spec]
