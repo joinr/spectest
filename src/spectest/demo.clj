@@ -14,7 +14,7 @@
 ;;a spec-tools data spec registered under ::Amount .
 (s/def ::Amount
   (ds/spec ::Amount
-           {:amount ::poss
+           {:amount ::pos
             :currency ::currency}))
 
 ;;a spec-tools data spec registered under ::Bet .
